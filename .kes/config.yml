@@ -2,7 +2,7 @@ default:
   stackName: sat-api-v1-dev
 
   buckets:
-    internal: sat-api
+    internal: sat-api-ard-dev
 
   tags:
     project: sat-api
@@ -70,3 +70,10 @@ default:
 production:
   stackName: sat-api-v1
 
+  api_url: "{{API_URL_PROD}}"
+
+ard:
+  stackName: ard-sat-api
+
+  tags:
+    project: sgt-landsat-ard
